@@ -1,27 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#roulette {
+  background-image: linear-gradient(180deg, #005626 0%, #017431 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.red {
+  background-image: linear-gradient(
+    300deg,
+    #cf0000 0%,
+    rgba(247, 0, 1, 0.9) 100%
+  );
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.black {
+  background-image: linear-gradient(
+    45deg,
+    #070001 43%,
+    rgba(35, 37, 32, 0.9) 100%
+  );
 }
