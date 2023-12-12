@@ -4,15 +4,15 @@ import { RotateCcw } from 'lucide-react';
 const page = () => {
   return (
     <div id="roulette" className="min-h-screen">
-      <div className="grid grid-cols-1 py-8 px-8 mb-16">
-        <div className="h-[350px] flex justify-center items-center">
+      <div className="grid grid-cols-1 py-8 px-8">
+        <div className="h-[350px] place-content-center w-[350px] grid grid-col-1">
           <Wheel />
         </div>
         <div className="h-[200px] ">
           <Table />
         </div>
       </div>
-      <div className=" bg-black/20 h-[95px] rounded-tl-lg rounded-tr-lg relative flex">
+      <div className=" bg-black/20 h-[95px] rounded-tl-lg rounded-tr-lg fixed bottom-0 w-full flex">
         <div
           className=" px-4 py-2 flex overflow-x-auto flex-nowrap overflow-y-hidden w-full items-center gap-x-3
         "
